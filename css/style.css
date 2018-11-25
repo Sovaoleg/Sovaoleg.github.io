@@ -1,0 +1,1243 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /*transition: all .1s ease-in-out;*/ }
+
+h1, h2, h3 {
+  padding: 0;
+  margin: 0; }
+
+html, body {
+  font-size: 100%; }
+
+img {
+  min-width: 100%;
+  min-height: 100%; }
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  background-image: url('../opt_img/main1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  
+}
+
+.main-ct {
+  min-height: 100%;
+  margin: 0 auto; }
+
+.all-wrapper {
+  max-width: 1200px;
+  height: 900px;
+  margin: 0 auto;
+  position: relative; }
+
+.header {
+  max-width: 25%;
+  position: absolute;
+  top: 3%;
+  left: 0;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Mali', cursive;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 1.3);
+  text-shadow: 1px 1px 20px #facb57, 0 0 10px #facb57; }
+
+.header h1 {
+  color: #fff;
+  font-family: 'Mali', cursive;
+  font-size: 26px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #CCAC00;
+  border-radius: 50%;
+  text-transform: uppercase;
+   }
+
+.header h2 {
+  color: #fff;
+  font-family: 'Mali', cursive;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  border-top: 1px solid #CCAC00;
+  border-radius: 50%;
+  letter-spacing: 10px;
+  padding: 0;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 2px #facb57, 0 0 5px #facb57; }
+
+.header p {
+  color: white;
+  text-align: left; }
+
+.header p i {
+  color: white;
+  vertical-align: middle;
+  margin-right: 5px; }
+
+.header p a {
+  color: white;
+  vertical-align: middle;
+  text-decoration: none; }
+
+.header p a:not(:last-child) {
+  margin-right: 111px; }
+
+.tree {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #ccac00 url("../opt_img/try.png") no-repeat center center;
+  border-radius: 50%;
+  border-color: inherit;
+  -webkit-box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.9); }
+
+.tree__link {
+  display: block;
+  height: 100%;
+  border: none; }
+
+.main-bl {
+  width: 500px;
+  height: 600px;
+  position: absolute;
+  left: 51%;
+  -webkit-transform: translateX(-51%);
+  transform: translateX(-51%);
+  bottom: 8%;
+  font-size: 0; }
+
+.star {
+  position: absolute;
+  min-height: 80px;
+  min-width: 80px;
+  background: url("../opt_img/star.png") no-repeat center center;
+  left: 51%;
+  -webkit-transform: translateX(-51%);
+  transform: translateX(-51%);
+  top: 16%;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0s 999999s;
+  transition: 0s 999999s; }
+
+.text {
+  color: white;
+  text-align: center;
+  padding: 30px 10px 0;
+  font-family: 'Mali', cursive;
+  font-size: 17px;
+  border-bottom: 2px solid #fff; }
+
+.list {
+  max-width: 550px;
+  opacity: 0;
+  -webkit-transition: 0s 999999s;
+  transition: 0s 999999s;
+  text-align: left;
+  position: absolute;
+  left: 90%;
+  -webkit-transform: translateX(-85%);
+  transform: translateX(-85%);
+  top: 10%; 
+  visibility: hidden; }
+
+
+.list_item {
+  list-style: none; }
+
+.list_item li {
+  display: block;
+  color: #fff;
+  font-family: 'Mali', cursive;
+  font-size: 18px;
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 10px;
+  width: 133px; }
+
+.list_item li:not(:last-child) {
+  margin-right: 4px; }
+
+.list ul li a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+/*.list_item li:not(:last-child)::after{
+	content: "|";
+	padding: 5px;
+	cursor: auto;
+}
+*/
+/*.fir
+st-element{
+	width: 348px;
+	height: 261px;
+	background: transparent url(../opt_img/first-element.png) no-repeat;
+	position: absolute;
+	left: 0;
+	bottom: 96px;
+	left: 539px;
+	transform: translateX(-50%);
+	background-size: cover;
+	overflow: visible;
+	opacity: 1;
+	transition: 0s 9999999s;
+	
+}
+.second-element{
+	width: 275px;
+	height: 375px;
+	background: transparent url(../opt_img/second-element.png) no-repeat;
+	position: absolute;
+	bottom: 357px;
+	left: 642px;
+	transform: translateX(-50%);
+	background-size: cover;
+	overflow: visible;
+	opacity: 1;
+	transition: 0s 9999999s;
+	
+}
+.third-element{
+	width: 269px;
+	height: 381px;
+	background: transparent url(../opt_img/third-element.png) no-repeat;
+	position: absolute;
+	bottom: 357px;
+	left: 374px;
+	transform: translateX(-50%);
+	background-size: cover;
+	overflow: visible;
+	opacity: 1;
+	transition: 0s 9999999s;
+	
+}*/
+.col-1 {
+  width: calc(100% / 10);
+  min-width: 50px;
+  min-height: 50px;
+  float: left; }
+
+[class*="row"] {
+  opacity: 0;
+  -webkit-transition: 0s 9999999s;
+  transition: 0s 9999999s; }
+
+.cf {
+  clear: both; }
+
+.cf:before,
+.cf:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.tree:hover + .star + .list + .main-bl .row_12 {
+  opacity: .9;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.tree:hover + .star + .list + .main-bl .row_11 {
+  opacity: .9;
+  -webkit-transition: 1.1s;
+  transition: 1.1s; }
+
+.tree:hover + .star + .list + .main-bl .row_10 {
+  opacity: .9;
+  -webkit-transition: 1.12s;
+  transition: 1.12s; }
+
+.tree:hover + .star + .list + .main-bl .row_9 {
+  opacity: .9;
+  -webkit-transition: 1.13s;
+  transition: 1.13s; }
+
+.tree:hover + .star + .list + .main-bl .row_8 {
+  opacity: .9;
+  -webkit-transition: 1.14s;
+  transition: 1.14s; }
+
+.tree:hover + .star + .list + .main-bl .row_7 {
+  opacity: .9;
+  -webkit-transition: 1.14s;
+  transition: 1.14s; }
+
+.tree:hover + .star + .list + .main-bl .row_6 {
+  opacity: .9;
+  -webkit-transition: 1.14s;
+  transition: 1.14s; }
+
+.tree:hover + .star + .list + .main-bl .row_5 {
+  opacity: .9;
+  -webkit-transition: 1.14s;
+  transition: 1.14s; }
+
+.tree:hover + .star + .list + .main-bl .row_4 {
+  opacity: .9;
+  -webkit-transition: 1.14s;
+  transition: 1.14s; }
+
+.tree:hover + .star + .list + .main-bl .row_3 {
+  opacity: .9;
+  -webkit-transition: 1.14s;
+  transition: 1.14s; }
+
+.tree:hover + .star + .list + .main-bl .row_2 {
+  opacity: .9;
+  -webkit-transition: 1.14s;
+  transition: 1.14s; }
+
+.tree:hover + .star + .list + .main-bl .row_1 {
+  opacity: .9;
+  -webkit-transition: 1.15s;
+  transition: 1.15s; }
+
+.tree:hover + .star {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 1.16s;
+  transition: 1.16s; }
+
+.star:hover {
+  background-size: 70px; }
+
+.list ul:hover li {
+  opacity: 0; }
+
+.list ul li:hover {
+  opacity: 1;
+  background-color: #fff;
+  color: black;
+  -webkit-box-shadow: 0 0 15px white;
+  box-shadow: 0 0 15px white; }
+
+.tree + .star:hover + .list {
+  opacity: 1;
+   visibility: visible;
+  -webkit-transition: 0.1s;
+  transition: 0.1s; }
+
+.preloader-2 {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  opacity: 1;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+  visibility: visible; }
+  .preloader-2 .loader {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 75px; }
+  .preloader-2.done {
+    opacity: 0;
+    visibility: hidden; }
+
+ .img_1{
+  background-image: url("../opt_img/tree/image_part_001.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_2{
+  background-image: url("../opt_img/tree/image_part_002.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_3{
+  background-image: url("../opt_img/tree/image_part_003.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_4{
+  background-image: url("../opt_img/tree/image_part_004.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_5{
+  background-image: url("../opt_img/tree/image_part_005.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_6{
+  background-image: url("../opt_img/tree/image_part_006.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_7{
+  background-image: url("../opt_img/tree/image_part_007.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_8{
+  background-image: url("../opt_img/tree/image_part_008.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_9{
+  background-image: url("../opt_img/tree/image_part_009.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_10{
+  background-image: url("../opt_img/tree/image_part_010.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+ .img_11{
+  background-image: url("../opt_img/tree/image_part_011.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_12{
+  background-image: url("../opt_img/tree/image_part_012.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_13{
+  background-image: url("../opt_img/tree/image_part_013.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_14{
+  background-image: url("../opt_img/tree/image_part_014.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_15{
+  background-image: url("../opt_img/tree/image_part_015.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_16{
+  background-image: url("../opt_img/tree/image_part_016.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_17{
+  background-image: url("../opt_img/tree/image_part_017.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_18{
+  background-image: url("../opt_img/tree/image_part_018.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_19{
+  background-image: url("../opt_img/tree/image_part_019.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_20{
+  background-image: url("../opt_img/tree/image_part_020.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+
+ .img_21{
+  background-image: url("../opt_img/tree/image_part_021.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_22{
+  background-image: url("../opt_img/tree/image_part_022.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_23{
+  background-image: url("../opt_img/tree/image_part_023.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_24{
+  background-image: url("../opt_img/tree/image_part_024.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_25{
+  background-image: url("../opt_img/tree/image_part_025.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_26{
+  background-image: url("../opt_img/tree/image_part_026.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_27{
+  background-image: url("../opt_img/tree/image_part_027.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_28{
+  background-image: url("../opt_img/tree/image_part_028.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_29{
+  background-image: url("../opt_img/tree/image_part_029.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_30{
+  background-image: url("../opt_img/tree/image_part_030.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+ .img_31{
+  background-image: url("../opt_img/tree/image_part_031.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_32{
+  background-image: url("../opt_img/tree/image_part_032.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_33{
+  background-image: url("../opt_img/tree/image_part_033.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_34{
+  background-image: url("../opt_img/tree/image_part_034.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_35{
+  background-image: url("../opt_img/tree/image_part_035.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_36{
+  background-image: url("../opt_img/tree/image_part_036.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_37{
+  background-image: url("../opt_img/tree/image_part_037.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_38{
+  background-image: url("../opt_img/tree/image_part_038.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_39{
+  background-image: url("../opt_img/tree/image_part_039.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_40{
+  background-image: url("../opt_img/tree/image_part_040.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+  .img_41{
+  background-image: url("../opt_img/tree/image_part_041.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_42{
+  background-image: url("../opt_img/tree/image_part_042.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_43{
+  background-image: url("../opt_img/tree/image_part_043.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_44{
+  background-image: url("../opt_img/tree/image_part_044.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_45{
+  background-image: url("../opt_img/tree/image_part_045.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_46{
+  background-image: url("../opt_img/tree/image_part_046.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_47{
+  background-image: url("../opt_img/tree/image_part_047.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_48{
+  background-image: url("../opt_img/tree/image_part_048.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_49{
+  background-image: url("../opt_img/tree/image_part_049.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_50{
+  background-image: url("../opt_img/tree/image_part_050.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_51{
+  background-image: url("../opt_img/tree/image_part_051.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_52{
+  background-image: url("../opt_img/tree/image_part_052.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_53{
+  background-image: url("../opt_img/tree/image_part_053.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_54{
+  background-image: url("../opt_img/tree/image_part_054.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_55{
+  background-image: url("../opt_img/tree/image_part_055.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_56{
+  background-image: url("../opt_img/tree/image_part_056.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_57{
+  background-image: url("../opt_img/tree/image_part_057.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_58{
+  background-image: url("../opt_img/tree/image_part_058.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_59{
+  background-image: url("../opt_img/tree/image_part_059.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_60{
+  background-image: url("../opt_img/tree/image_part_060.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+ .img_61{
+  background-image: url("../opt_img/tree/image_part_061.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_62{
+  background-image: url("../opt_img/tree/image_part_062.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_63{
+  background-image: url("../opt_img/tree/image_part_063.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_64{
+  background-image: url("../opt_img/tree/image_part_064.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_65{
+  background-image: url("../opt_img/tree/image_part_065.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_66{
+  background-image: url("../opt_img/tree/image_part_066.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_67{
+  background-image: url("../opt_img/tree/image_part_067.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_68{
+  background-image: url("../opt_img/tree/image_part_068.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_69{
+  background-image: url("../opt_img/tree/image_part_069.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_70{
+  background-image: url("../opt_img/tree/image_part_070.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_71{
+  background-image: url("../opt_img/tree/image_part_071.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_72{
+  background-image: url("../opt_img/tree/image_part_072.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_73{
+  background-image: url("../opt_img/tree/image_part_073.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_74{
+  background-image: url("../opt_img/tree/image_part_074.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_75{
+  background-image: url("../opt_img/tree/image_part_075.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_76{
+  background-image: url("../opt_img/tree/image_part_076.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_77{
+  background-image: url("../opt_img/tree/image_part_077.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_78{
+  background-image: url("../opt_img/tree/image_part_078.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_79{
+  background-image: url("../opt_img/tree/image_part_079.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_80{
+  background-image: url("../opt_img/tree/image_part_080.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+
+  .img_81{
+  background-image: url("../opt_img/tree/image_part_081.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_82{
+  background-image: url("../opt_img/tree/image_part_082.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_83{
+  background-image: url("../opt_img/tree/image_part_083.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_84{
+  background-image: url("../opt_img/tree/image_part_084.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_85{
+  background-image: url("../opt_img/tree/image_part_085.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_86{
+  background-image: url("../opt_img/tree/image_part_086.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_87{
+  background-image: url("../opt_img/tree/image_part_087.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_88{
+  background-image: url("../opt_img/tree/image_part_088.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_89{
+  background-image: url("../opt_img/tree/image_part_089.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_90{
+  background-image: url("../opt_img/tree/image_part_090.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+  .img_91{
+  background-image: url("../opt_img/tree/image_part_091.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_92{
+  background-image: url("../opt_img/tree/image_part_092.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+.img_93{
+  background-image: url("../opt_img/tree/image_part_093.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_94{
+  background-image: url("../opt_img/tree/image_part_094.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_95{
+  background-image: url("../opt_img/tree/image_part_095.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_96{
+  background-image: url("../opt_img/tree/image_part_096.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_97{
+  background-image: url("../opt_img/tree/image_part_097.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_98{
+  background-image: url("../opt_img/tree/image_part_098.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_99{
+  background-image: url("../opt_img/tree/image_part_099.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+ .img_100{
+  background-image: url("../opt_img/tree/image_part_100.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+  .img_101{
+  background-image: url("../opt_img/tree/image_part_101.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_102{
+  background-image: url("../opt_img/tree/image_part_102.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_103{
+  background-image: url("../opt_img/tree/image_part_103.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_104{
+  background-image: url("../opt_img/tree/image_part_104.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_105{
+  background-image: url("../opt_img/tree/image_part_105.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_106{
+  background-image: url("../opt_img/tree/image_part_106.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_107{
+  background-image: url("../opt_img/tree/image_part_107.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_108{
+  background-image: url("../opt_img/tree/image_part_108.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_109{
+  background-image: url("../opt_img/tree/image_part_109.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_110{
+  background-image: url("../opt_img/tree/image_part_110.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+  .img_111{
+  background-image: url("../opt_img/tree/image_part_111.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_112{
+  background-image: url("../opt_img/tree/image_part_112.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_113{
+  background-image: url("../opt_img/tree/image_part_113.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_114{
+  background-image: url("../opt_img/tree/image_part_114.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_115{
+  background-image: url("../opt_img/tree/image_part_115.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_116{
+  background-image: url("../opt_img/tree/image_part_116.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_117{
+  background-image: url("../opt_img/tree/image_part_117.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_118{
+  background-image: url("../opt_img/tree/image_part_118.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_119{
+  background-image: url("../opt_img/tree/image_part_119.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+   .img_120{
+  background-image: url("../opt_img/tree/image_part_120.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+ }
+
+ .div{
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+ }
+.eye{
+  position: absolute;
+  padding: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../opt_img/bgeye.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; 
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+  opacity: 0;
+}
