@@ -11,7 +11,7 @@ listpoint.onmouseover = function(){
 }
 
 listpoint.onmouseout = function(){
-	document.body.style.backgroundImage = "url('../portfolio/opt_img/main1.png')";
+	document.body.style.backgroundImage = "url('https://raw.githubusercontent.com/Sovaoleg/Sovaoleg.github.io/master/opt_img/main1.png')";
 	document.getElementsByClassName('tree')[0].style.visibility='visible';
 	document.getElementsByClassName('main-bl')[0].style.display='block';
 	document.getElementsByClassName('star')[0].style.display='block';
