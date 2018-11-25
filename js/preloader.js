@@ -25,6 +25,6 @@ function image_loaded() {
 				preloader.classList.add('done');
 			}
 
-		}, 1000);
+		}, 3000);
 	}
 }
